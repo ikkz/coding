@@ -6,6 +6,9 @@
 
 template<typename T>
 std::vector<T> solve(std::vector<T> array, int p) {
+    if (array.size() == 0) {
+        return array;
+    }
     p = p % array.size();
     auto reverse = [&](int begin, int end) {
         while (begin < end) {
