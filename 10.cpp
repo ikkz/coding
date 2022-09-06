@@ -19,7 +19,7 @@ template <typename T> std::vector<T> solve(std::vector<T> array, int p) {
   reverse(0, array.size() - 1);
   return array;
 }
-TEST_CASE("2_2_10") {
+TEST_CASE("10") {
   using Vec = std::vector<int>;
   SUBCASE("空数组") { CHECK_EQ(solve(Vec{}, 1), Vec{}); }
   SUBCASE("1个元素") { CHECK_EQ(solve(Vec{1}, 1), Vec{1}); }

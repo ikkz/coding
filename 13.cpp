@@ -16,7 +16,7 @@ int solve(Vec vec) {
   return -1;
 }
 
-TEST_CASE("2_2_12") {
+TEST_CASE("13") {
   SUBCASE("有主元素") {
     Vec vec = {0, 5, 5, 3, 5, 7, 5, 5};
     CHECK_EQ(5, solve(vec));

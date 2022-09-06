@@ -36,7 +36,7 @@ int solve_quick_sort(Vec vec1, Vec vec2) {
     return vec1[static_cast<size_t>(std::ceil(static_cast<double>(vec1.size()) / 2) - 1)];
 }
 
-TEST_CASE("2_11") {
+TEST_CASE("11") {
     SUBCASE("快速排序") {
         {
             Vec s1 = {11, 13, 15, 17, 19};
