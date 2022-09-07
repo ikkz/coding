@@ -5,6 +5,7 @@
 #include <vector>
 
 using Vec = std::vector<int>;
+using namespace linklist;
 
 int solve(LinkList<int> list, int k) {
   auto slow = list;

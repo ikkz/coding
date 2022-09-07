@@ -4,6 +4,7 @@
 #include <doctest.h>
 #include <vector>
 
+using namespace linklist;
 using Node = LinkNode<char>;
 using List = LinkList<char>;
 
