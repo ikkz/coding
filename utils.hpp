@@ -59,3 +59,11 @@ template <typename T> LinkList<T> copy(LinkList<T> list) {
 }
 
 } // namespace linklist
+
+namespace tree {
+template <typename T> struct BinaryTreeNode {
+  T data;
+  BinaryTreeNode<T> *left;
+  BinaryTreeNode<T> *right;
+};
+} // namespace tree
