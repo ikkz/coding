@@ -6,12 +6,12 @@ namespace linklist {
 
 template <typename T> struct LinkNode {
   T data;
-  LinkNode<T> *next;
+  LinkNode<T> *next = nullptr;
 };
 
 template <typename T> struct DoubleLinkNode {
   T data;
-  DoubleLinkNode<T> *prev, *next;
+  DoubleLinkNode<T> *prev = nullptr, *next = nullptr;
 };
 
 template <typename T> using LinkList = LinkNode<T> *;
@@ -19,8 +19,7 @@ template <typename T> using LinkList = LinkNode<T> *;
 template <typename T> using DoubleLinkList = DoubleLinkNode<T> *;
 
 // 尾插法
-template <typename T>
-LinkList<T> build_link_list(const std::vector<T> &vec) {
+template <typename T> LinkList<T> build_link_list(const std::vector<T> &vec) {
   auto head = new LinkNode<T>();
   auto p = head;
   for (auto &i : vec) {
