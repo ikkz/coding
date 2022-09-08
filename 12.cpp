@@ -32,9 +32,9 @@ char solve(List str1, List str2) {
 }
 
 TEST_CASE("12") {
-  auto str1 = build_link_list_from_vec<char>({'l', 'o', 'a', 'd'});
-  auto str2 = build_link_list_from_vec<char>({'b', 'e'});
-  auto tail = build_link_list_from_vec<char>({'i', 'n', 'g'})->next;
+  auto str1 = build_link_list<char>({'l', 'o', 'a', 'd'});
+  auto str2 = build_link_list<char>({'b', 'e'});
+  auto tail = build_link_list<char>({'i', 'n', 'g'})->next;
 
   auto p = str1;
   for (; p->next; p = p->next)

@@ -20,7 +20,7 @@ template <typename T> using DoubleLinkList = DoubleLinkNode<T> *;
 
 // 尾插法
 template <typename T>
-LinkList<T> build_link_list_from_vec(const std::vector<T> &vec) {
+LinkList<T> build_link_list(const std::vector<T> &vec) {
   auto head = new LinkNode<T>();
   auto p = head;
   for (auto &i : vec) {

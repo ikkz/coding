@@ -31,8 +31,8 @@ List solve(List list, int n) {
 }
 
 TEST_CASE("18") {
-  auto list = build_link_list_from_vec<int>({21, -15, -15, -7, 15});
+  auto list = build_link_list<int>({21, -15, -15, -7, 15});
 
   CHECK(is_link_list_equal(solve(copy(list), 21),
-                           build_link_list_from_vec<int>({21, -15, -7})));
+                           build_link_list<int>({21, -15, -7})));
 }
