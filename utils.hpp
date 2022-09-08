@@ -62,7 +62,14 @@ template <typename T> LinkList<T> copy(LinkList<T> list) {
 namespace tree {
 template <typename T> struct BinaryTreeNode {
   T data;
-  BinaryTreeNode<T> *left;
-  BinaryTreeNode<T> *right;
+  BinaryTreeNode<T> *left = nullptr;
+  BinaryTreeNode<T> *right = nullptr;
+
+  BinaryTreeNode(const T &data, BinaryTreeNode<T> *left = nullptr,
+                 BinaryTreeNode<T> *right = nullptr) {
+    this->data = data;
+    this->left = left;
+    this->right = right;
+  };
 };
 } // namespace tree

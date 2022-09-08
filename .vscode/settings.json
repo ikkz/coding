@@ -11,6 +11,8 @@
         "unordered_set": "cpp",
         "algorithm": "cpp",
         "stack": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp"
     }
 }
