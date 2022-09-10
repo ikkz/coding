@@ -13,6 +13,8 @@
         "stack": "cpp",
         "iterator": "cpp",
         "__config": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "type_traits": "cpp",
+        "limits": "cpp"
     }
 }
