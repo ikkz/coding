@@ -14,4 +14,3 @@ foreach(SRC ${SRCS})
     add_executable(${TARGET} ${SRC})
     add_test(NAME ${TARGET} COMMAND ${TARGET})
 endforeach()
-
